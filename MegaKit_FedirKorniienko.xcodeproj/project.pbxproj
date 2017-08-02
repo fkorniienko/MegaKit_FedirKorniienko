@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		623449181F31DBE60071577B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449171F31DBE60071577B /* AppDelegate.swift */; };
+		6234491A1F31DBE60071577B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449191F31DBE60071577B /* MainVC.swift */; };
+		6234491D1F31DBE60071577B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6234491B1F31DBE60071577B /* Main.storyboard */; };
+		6234491F1F31DBE60071577B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6234491E1F31DBE60071577B /* Assets.xcassets */; };
+		623449221F31DBE60071577B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 623449201F31DBE60071577B /* LaunchScreen.storyboard */; };
+		6234492F1F31E25B0071577B /* DatabaseManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234492E1F31E25B0071577B /* DatabaseManagement.swift */; };
+		623449311F31E2860071577B /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449301F31E2860071577B /* Car.swift */; };
+		623449341F31EDB30071577B /* MainTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449321F31EDB30071577B /* MainTVCell.swift */; };
+		623449351F31EDB30071577B /* MainTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623449331F31EDB30071577B /* MainTVCell.xib */; };
+		623449371F31FE2D0071577B /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449361F31FE2D0071577B /* Driver.swift */; };
+		6234493B1F3200240071577B /* AddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234493A1F3200240071577B /* AddVC.swift */; };
+		6234493D1F3202810071577B /* EntityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234493C1F3202810071577B /* EntityVC.swift */; };
+		623449401F3203270071577B /* StringTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234493E1F3203270071577B /* StringTVCell.swift */; };
+		623449411F3203270071577B /* StringTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6234493F1F3203270071577B /* StringTVCell.xib */; };
+		623449441F32033F0071577B /* AddButtonTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449421F32033F0071577B /* AddButtonTVCell.swift */; };
+		623449451F32033F0071577B /* AddButtonTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 623449431F32033F0071577B /* AddButtonTVCell.xib */; };
+		623449471F320B270071577B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623449461F320B270071577B /* Helpers.swift */; };
+		627CBEE61F32401F00B08A4B /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627CBEE51F32401F00B08A4B /* DetailsVC.swift */; };
+		9F00DBD3F6246CF467DCAB41 /* Pods_MegaKit_FedirKorniienko.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837F6DC8AE6D5DFA19EC6CB /* Pods_MegaKit_FedirKorniienko.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10A6DED16D00BDB29477043F /* Pods-MegaKit_FedirKorniienko.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MegaKit_FedirKorniienko.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MegaKit_FedirKorniienko/Pods-MegaKit_FedirKorniienko.debug.xcconfig"; sourceTree = "<group>"; };
+		5837F6DC8AE6D5DFA19EC6CB /* Pods_MegaKit_FedirKorniienko.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MegaKit_FedirKorniienko.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		623449141F31DBE60071577B /* MegaKit_FedirKorniienko.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MegaKit_FedirKorniienko.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		623449171F31DBE60071577B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		623449191F31DBE60071577B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		6234491C1F31DBE60071577B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6234491E1F31DBE60071577B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		623449211F31DBE60071577B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		623449231F31DBE60071577B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6234492E1F31E25B0071577B /* DatabaseManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManagement.swift; sourceTree = "<group>"; };
+		623449301F31E2860071577B /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		623449321F31EDB30071577B /* MainTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTVCell.swift; sourceTree = "<group>"; };
+		623449331F31EDB30071577B /* MainTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTVCell.xib; sourceTree = "<group>"; };
+		623449361F31FE2D0071577B /* Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		6234493A1F3200240071577B /* AddVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddVC.swift; sourceTree = "<group>"; };
+		6234493C1F3202810071577B /* EntityVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityVC.swift; sourceTree = "<group>"; };
+		6234493E1F3203270071577B /* StringTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTVCell.swift; sourceTree = "<group>"; };
+		6234493F1F3203270071577B /* StringTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StringTVCell.xib; sourceTree = "<group>"; };
+		623449421F32033F0071577B /* AddButtonTVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddButtonTVCell.swift; sourceTree = "<group>"; };
+		623449431F32033F0071577B /* AddButtonTVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddButtonTVCell.xib; sourceTree = "<group>"; };
+		623449461F320B270071577B /* Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		627CBEE51F32401F00B08A4B /* DetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
+		774138597229E0658CF7F4F5 /* Pods-MegaKit_FedirKorniienko.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MegaKit_FedirKorniienko.release.xcconfig"; path = "Pods/Target Support Files/Pods-MegaKit_FedirKorniienko/Pods-MegaKit_FedirKorniienko.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		623449111F31DBE60071577B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F00DBD3F6246CF467DCAB41 /* Pods_MegaKit_FedirKorniienko.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52C752E03440B23106FCDE70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5837F6DC8AE6D5DFA19EC6CB /* Pods_MegaKit_FedirKorniienko.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6234490B1F31DBE60071577B = {
+			isa = PBXGroup;
+			children = (
+				623449161F31DBE60071577B /* MegaKit_FedirKorniienko */,
+				623449151F31DBE60071577B /* Products */,
+				DAB06F5D263BDDFDDE6C9603 /* Pods */,
+				52C752E03440B23106FCDE70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		623449151F31DBE60071577B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				623449141F31DBE60071577B /* MegaKit_FedirKorniienko.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		623449161F31DBE60071577B /* MegaKit_FedirKorniienko */ = {
+			isa = PBXGroup;
+			children = (
+				623449171F31DBE60071577B /* AppDelegate.swift */,
+				623449461F320B270071577B /* Helpers.swift */,
+				6234492D1F31DCA20071577B /* DataBase */,
+				623449381F31FFDF0071577B /* TVCell */,
+				623449391F31FFF20071577B /* Controllers */,
+				6234491B1F31DBE60071577B /* Main.storyboard */,
+				6234491E1F31DBE60071577B /* Assets.xcassets */,
+				623449201F31DBE60071577B /* LaunchScreen.storyboard */,
+				623449231F31DBE60071577B /* Info.plist */,
+			);
+			path = MegaKit_FedirKorniienko;
+			sourceTree = "<group>";
+		};
+		6234492D1F31DCA20071577B /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				6234492E1F31E25B0071577B /* DatabaseManagement.swift */,
+				623449301F31E2860071577B /* Car.swift */,
+				623449361F31FE2D0071577B /* Driver.swift */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		623449381F31FFDF0071577B /* TVCell */ = {
+			isa = PBXGroup;
+			children = (
+				623449321F31EDB30071577B /* MainTVCell.swift */,
+				623449331F31EDB30071577B /* MainTVCell.xib */,
+				6234493E1F3203270071577B /* StringTVCell.swift */,
+				6234493F1F3203270071577B /* StringTVCell.xib */,
+				623449421F32033F0071577B /* AddButtonTVCell.swift */,
+				623449431F32033F0071577B /* AddButtonTVCell.xib */,
+			);
+			name = TVCell;
+			sourceTree = "<group>";
+		};
+		623449391F31FFF20071577B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				623449191F31DBE60071577B /* MainVC.swift */,
+				6234493A1F3200240071577B /* AddVC.swift */,
+				6234493C1F3202810071577B /* EntityVC.swift */,
+				627CBEE51F32401F00B08A4B /* DetailsVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DAB06F5D263BDDFDDE6C9603 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10A6DED16D00BDB29477043F /* Pods-MegaKit_FedirKorniienko.debug.xcconfig */,
+				774138597229E0658CF7F4F5 /* Pods-MegaKit_FedirKorniienko.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		623449131F31DBE60071577B /* MegaKit_FedirKorniienko */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 623449261F31DBE60071577B /* Build configuration list for PBXNativeTarget "MegaKit_FedirKorniienko" */;
+			buildPhases = (
+				3F4762AED8EF24004E55BB8C /* [CP] Check Pods Manifest.lock */,
+				623449101F31DBE60071577B /* Sources */,
+				623449111F31DBE60071577B /* Frameworks */,
+				623449121F31DBE60071577B /* Resources */,
+				A9C402F8A9DE3CC2DF7DD4AD /* [CP] Embed Pods Frameworks */,
+				6950AF3772AE4DC626A313F9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MegaKit_FedirKorniienko;
+			productName = MegaKit_FedirKorniienko;
+			productReference = 623449141F31DBE60071577B /* MegaKit_FedirKorniienko.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6234490C1F31DBE60071577B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = fedir;
+				TargetAttributes = {
+					623449131F31DBE60071577B = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3D89V9TM9X;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6234490F1F31DBE60071577B /* Build configuration list for PBXProject "MegaKit_FedirKorniienko" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6234490B1F31DBE60071577B;
+			productRefGroup = 623449151F31DBE60071577B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				623449131F31DBE60071577B /* MegaKit_FedirKorniienko */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		623449121F31DBE60071577B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623449221F31DBE60071577B /* LaunchScreen.storyboard in Resources */,
+				623449451F32033F0071577B /* AddButtonTVCell.xib in Resources */,
+				623449411F3203270071577B /* StringTVCell.xib in Resources */,
+				6234491F1F31DBE60071577B /* Assets.xcassets in Resources */,
+				623449351F31EDB30071577B /* MainTVCell.xib in Resources */,
+				6234491D1F31DBE60071577B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F4762AED8EF24004E55BB8C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6950AF3772AE4DC626A313F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MegaKit_FedirKorniienko/Pods-MegaKit_FedirKorniienko-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9C402F8A9DE3CC2DF7DD4AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MegaKit_FedirKorniienko/Pods-MegaKit_FedirKorniienko-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		623449101F31DBE60071577B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				623449401F3203270071577B /* StringTVCell.swift in Sources */,
+				627CBEE61F32401F00B08A4B /* DetailsVC.swift in Sources */,
+				623449441F32033F0071577B /* AddButtonTVCell.swift in Sources */,
+				6234491A1F31DBE60071577B /* MainVC.swift in Sources */,
+				623449181F31DBE60071577B /* AppDelegate.swift in Sources */,
+				623449471F320B270071577B /* Helpers.swift in Sources */,
+				623449311F31E2860071577B /* Car.swift in Sources */,
+				623449371F31FE2D0071577B /* Driver.swift in Sources */,
+				623449341F31EDB30071577B /* MainTVCell.swift in Sources */,
+				6234493B1F3200240071577B /* AddVC.swift in Sources */,
+				6234492F1F31E25B0071577B /* DatabaseManagement.swift in Sources */,
+				6234493D1F3202810071577B /* EntityVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6234491B1F31DBE60071577B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6234491C1F31DBE60071577B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		623449201F31DBE60071577B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				623449211F31DBE60071577B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		623449241F31DBE60071577B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		623449251F31DBE60071577B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		623449271F31DBE60071577B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10A6DED16D00BDB29477043F /* Pods-MegaKit_FedirKorniienko.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D89V9TM9X;
+				INFOPLIST_FILE = MegaKit_FedirKorniienko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fedir.MegaKit-FedirKorniienko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		623449281F31DBE60071577B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 774138597229E0658CF7F4F5 /* Pods-MegaKit_FedirKorniienko.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3D89V9TM9X;
+				INFOPLIST_FILE = MegaKit_FedirKorniienko/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fedir.MegaKit-FedirKorniienko";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6234490F1F31DBE60071577B /* Build configuration list for PBXProject "MegaKit_FedirKorniienko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623449241F31DBE60071577B /* Debug */,
+				623449251F31DBE60071577B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		623449261F31DBE60071577B /* Build configuration list for PBXNativeTarget "MegaKit_FedirKorniienko" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				623449271F31DBE60071577B /* Debug */,
+				623449281F31DBE60071577B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6234490C1F31DBE60071577B /* Project object */;
+}

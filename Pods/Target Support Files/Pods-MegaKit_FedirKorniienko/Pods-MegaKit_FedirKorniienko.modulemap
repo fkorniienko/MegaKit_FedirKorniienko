@@ -1,0 +1,6 @@
+framework module Pods_MegaKit_FedirKorniienko {
+  umbrella header "Pods-MegaKit_FedirKorniienko-umbrella.h"
+
+  export *
+  module * { export * }
+}
