@@ -22,6 +22,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         segmentControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         fetchData()
     }
  

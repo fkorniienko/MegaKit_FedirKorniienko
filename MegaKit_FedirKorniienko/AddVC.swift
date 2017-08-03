@@ -8,7 +8,7 @@
 
 import UIKit
 import SQLite
-class AddVC: UIViewController {
+class AddVC: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var buttonDone: UIButton!
     @IBOutlet weak var textFieldTitle: UITextField!
@@ -17,7 +17,19 @@ class AddVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonDone.addTarget(self, action: #selector(addEntityVC), for: .touchUpInside)
-        
+        hideKeyboardWhenTappedAround()
+    }
+    
+    
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.delegate = self
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        self.view.endEditing(true)
     }
 
     // add element to sql and go to add new elements

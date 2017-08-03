@@ -46,13 +46,13 @@ class EntityVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UI
 
         case 0:
         if let cell: AddButtonTVCell = tableView.dequeueReusableCell(withIdentifier: "AddButtonTVCell") as? AddButtonTVCell {
-            cell.buttonAdd.tag = indexPath.row + addCount
-            cell.buttonAdd.addTarget(self, action: #selector(addCell(button:)), for: .touchUpInside)
+                cell.buttonAdd.tag = indexPath.row + addCount
+                cell.buttonAdd.addTarget(self, action: #selector(addCell(button:)), for: .touchUpInside)
             return cell
         }
         default: if let cell: StringTVCell = tableView.dequeueReusableCell(withIdentifier: "StringTVCell") as? StringTVCell {
-            cell.textField.placeholder = segmentState == 0 ? "Select your Drivers" : "Select your Cars"
-            cell.textField.delegate = self
+                cell.textField.placeholder = segmentState == 0 ? "Select your Drivers" : "Select your Cars"
+                cell.textField.delegate = self
             return cell
         }
         }

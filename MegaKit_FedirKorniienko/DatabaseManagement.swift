@@ -20,6 +20,7 @@ class DatabaseManagement {
     private let name = Expression<String?>("name")
     private let entityId = Expression<Int>("entityId")
     
+    //init connection to sql
     private init() {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         
@@ -39,7 +40,6 @@ class DatabaseManagement {
             try db!.run(tableCar.create(ifNotExists: true) { table in
                 table.column(id, primaryKey: true)
                 table.column(name)
-                //                table.column(phone, unique: true)
                 table.column(entityId)
             })
             print("create table successfully")
@@ -48,6 +48,7 @@ class DatabaseManagement {
         }
     }
     
+    // get relations by driver
     func selectCarByEntity (inputEntityId: Int) -> [Car]{
         var Cars = [Car]()
         do {
@@ -65,6 +66,7 @@ class DatabaseManagement {
         return Cars
     }
     
+    //add new car
     func addCar(inputName: String, inputEntityId: Int) -> Int64? {
         do {
             let insert = tableCar.insert(name <- inputName, entityId <- inputEntityId)
@@ -77,6 +79,7 @@ class DatabaseManagement {
         }
     }
     
+    //get list of cars
     func queryAllCar() -> [Car] {
         var Cars = [Car]()
         
@@ -96,6 +99,7 @@ class DatabaseManagement {
         return Cars
     }
     
+    //update current car
     func updateCar(CarId:Int64, newCar: Car) -> Bool {
         let tblFilterCar = tableCar.filter(id == CarId)
         do {
@@ -104,7 +108,7 @@ class DatabaseManagement {
                 entityId <- newCar.entityId
                 ])
             if try db!.run(update) > 0 {
-                print("Update contact successfully")
+                print("Update car successfully")
                 return true
             }
         } catch {
@@ -113,7 +117,8 @@ class DatabaseManagement {
         
         return false
     }
-    
+
+    //delete current car
     func deleteCar(inputId: Int64) -> Bool {
         do {
             let tblFilterCar = tableCar.filter(id == inputId)
@@ -127,7 +132,7 @@ class DatabaseManagement {
         return false
     }
     
-    
+    //create table driver
     func createTableDriver() {
         do {
             try db!.run(tableDriver.create(ifNotExists: true) { table in
@@ -141,6 +146,7 @@ class DatabaseManagement {
         }
     }
     
+    //select relations by car
     func selectDriverByEntity (inputEntityId: Int) -> [Driver]{
         var Cars = [Driver]()
         do {
@@ -153,16 +159,17 @@ class DatabaseManagement {
                 }
             }
         } catch {
-            print("Cannot get list of Car")
+            print("Cannot get list of Driver")
         }
         return Cars
     }
     
+    //add new driver
     func addDriver(inputName: String, inputEntityId: Int) -> Int64? {
         do {
             let insert = tableDriver.insert(name <- inputName, entityId <- inputEntityId)
             let id = try db!.run(insert)
-            print("Insert to tblCar successfully")
+            print("Insert to tableDriver successfully")
             return id
         } catch {
             print("Cannot insert to database")
@@ -170,6 +177,7 @@ class DatabaseManagement {
         }
     }
     
+    //get all drivers
     func queryAllDriver() -> [Driver] {
         var Cars = [Driver]()
         
@@ -181,7 +189,7 @@ class DatabaseManagement {
                 Cars.append(newDriver)
             }
         } catch {
-            print("Cannot get list of Car")
+            print("Cannot get list of Driver")
         }
         for Car in Cars {
             print("each Driver = \(Car)")
@@ -189,6 +197,7 @@ class DatabaseManagement {
         return Cars
     }
     
+    //update current driver
     func updateDriver(CarId:Int64, newCar: Driver) -> Bool {
         let tblFilterCar = tableDriver.filter(id == CarId)
         do {
@@ -197,7 +206,7 @@ class DatabaseManagement {
                 entityId <- newCar.entityId
                 ])
             if try db!.run(update) > 0 {
-                print("Update contact successfully")
+                print("Update driver successfully")
                 return true
             }
         } catch {
@@ -207,6 +216,7 @@ class DatabaseManagement {
         return false
     }
     
+    //delete current driver
     func deleteDriver(inputId: Int64) -> Bool {
         do {
             let tblFilterCar = tableDriver.filter(id == inputId)
